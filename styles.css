@@ -555,7 +555,7 @@ h1 {
     text-shadow: 1px 2px 1px rgb(95, 94, 94);
 }
 
-@media all and (max-width:700px) {
+@media only screen and (max-width: 600px) {
     .nav {
         margin-left: 0px;
         display: flex;
