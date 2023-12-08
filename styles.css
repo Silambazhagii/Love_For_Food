@@ -73,7 +73,9 @@ label {
     margin-bottom: 10px;
 }
 
-#name,#email,#message {
+#name,
+#email,
+#message {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -365,7 +367,7 @@ h1 {
 
 .modal {
     position: fixed;
-    top: 52.3%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: transform 0.3s ease-in-out;
@@ -406,6 +408,7 @@ h1 {
     padding: 10px 15px;
 }
 
+
 #overlay {
     position: fixed;
     opacity: 0;
@@ -416,6 +419,7 @@ h1 {
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
     pointer-events: none;
+    z-index: 9;
 }
 
 #overlay.active {
@@ -428,155 +432,182 @@ h1 {
     height: 40vh;
     margin-top: 20px;
     border-radius: 20px;
-
 }
 
 .popup-text {
     color: rgb(255, 255, 255);
     text-shadow: 1px 2px 1px black;
     text-align: center;
-    font-size: 1.5rem;
-    margin: 5%;
+    font-size: 0.9rem;
+    margin-top: 1%;
 }
 
-.navBar{
+.navBar {
     position: absolute;
     margin-top: -370px;
     font-size: 27px;
     margin-left: 30px;
     cursor: pointer;
 }
-.navBar2{
+
+.navBar2 {
     position: absolute;
     margin-top: 20px;
     font-size: 27px;
     cursor: pointer;
 }
-.navBar1{
+
+.navBar1 {
     position: absolute;
     margin-top: -20px;
     font-size: 23px;
     cursor: pointer;
 }
-.rand_search, .rand_home{
+
+.rand_search,
+.rand_home {
     color: rgb(0, 0, 0);
     text-shadow: 1px 2px 1px white;
     list-style-type: none;
     text-decoration: none;
     margin-left: 30px;
 }
-.rand_search1, .rand_home1{
+
+.rand_search1,
+.rand_home1 {
     color: rgb(0, 0, 0);
     text-shadow: 1px 2px 1px white;
     list-style-type: none;
     text-decoration: none;
     margin-left: 30px;
 }
-.search_menu, .search_home{
+
+.search_menu,
+.search_home {
     list-style-type: none;
     text-decoration: none;
     margin-left: 30px;
     color: white;
     text-shadow: 1px 2px 1px black;
 }
-.search_menu:hover{
+
+.search_menu:hover {
     color: rgb(177, 174, 174);
     text-shadow: 1px 2px 1px rgb(255, 255, 255);
 
 }
-.search_home:hover{
-    color: rgb(177, 174, 174); 
+
+.search_home:hover {
+    color: rgb(177, 174, 174);
     text-shadow: 1px 2px 1px rgb(255, 255, 255);
 }
-.rand_search:hover{
+
+.rand_search:hover {
     color: white;
     text-shadow: 1px 2px 1px black;
 }
-.rand_home:hover{
+
+.rand_home:hover {
     color: white;
     text-shadow: 1px 2px 1px black;
 }
-.rand_search1:hover{
+
+.rand_search1:hover {
     color: white;
     text-shadow: 1px 2px 1px black;
 }
-.rand_home1:hover{
+
+.rand_home1:hover {
     color: white;
     text-shadow: 1px 2px 1px black;
 }
-.navBar3{
+
+.navBar3 {
     position: absolute;
     font-size: 23px;
     cursor: pointer;
     margin-top: -150px;
     margin-left: 20px;
 }
-.navBar4{
+
+.navBar4 {
     font-size: 23px;
     cursor: pointer;
     text-shadow: 1px 2px 1px rgb(147, 147, 147);
 
 }
-.contact_home{
+
+.contact_home {
     font-size: 23px;
     color: black;
     list-style-type: none;
     text-decoration: none;
 }
-.about_home{
+
+.about_home {
     color: white;
     list-style-type: none;
     text-decoration: none;
 }
-.contact_home:hover{
+
+.contact_home:hover {
     color: black;
     text-shadow: 1px 2px 1px rgb(95, 94, 94);
 }
 
-@media all and (max-width:700px){
-    .nav{
+@media all and (max-width:700px) {
+    .nav {
         margin-left: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .nav a{
+
+    .nav a {
         font-size: 11px;
         margin-left: 20px;
     }
-    .rand_home, .rand_search{
+
+    .rand_home,
+    .rand_search {
         margin-top: -15px;
         display: block;
         font-size: 15px;
         margin-left: 10px;
     }
-    .body1{
+
+    .body1 {
         overflow: hidden;
         background-image: url(Home\ Page\ respon.png);
         background-size: cover;
-    } 
-    .top{
+    }
+
+    .top {
         font-size: 20px;
         margin-left: 100px;
     }
-    .main{
+
+    .main {
         display: flex;
         justify-content: center;
         align-items: center;
         display: block;
     }
-    .image_src{
+
+    .image_src {
         margin-top: 20px;
         display: inline-block;
         width: 150px;
         height: 150px;
     }
-    .aboutMe{
+
+    .aboutMe {
         overflow: hidden;
         background-image: url("About\ Me\ respon.png");
         background-repeat: no-repeat;
     }
-    .para{
+
+    .para {
         margin-top: 100px;
         display: flex;
         justify-content: center;
@@ -587,68 +618,89 @@ h1 {
         font-size: 18px;
 
     }
-    .rand-body{
+
+    .rand-body {
         overflow: hidden;
         background-image: url('Random\ choice\ respon.png');
         background-attachment: fixed;
     }
-    .center{
+
+    .center {
         margin: 0;
         padding: 0;
     }
-    .left, .right{
+
+    .left,
+    .right {
         width: 40px;
     }
-    .left{
+
+    .left {
         margin-right: 0px;
         margin-top: 180px;
     }
-    .right{
+
+    .right {
         margin-left: 2px;
         margin-top: 180px;
     }
-    .area, .category{
+
+    .area,
+    .category {
         font-size: 20px;
     }
-    .item-name{
+
+    .item-name {
         font-size: 30px;
     }
-    .main1{
+
+    .main1 {
         width: 200px;
         margin-top: 80px;
     }
-    .rand_home1, .rand_search1{
+
+    .rand_home1,
+    .rand_search1 {
         font-size: 15px;
         display: block;
         margin-left: 0;
     }
-    .rand_home1{
+
+    .rand_home1 {
         margin-top: 200px;
     }
-    .navBar3{
+
+    .navBar3 {
         margin-top: -117px;
         text-shadow: 1px 2px 1px rgb(255, 255, 255);
     }
-    .contact_home{
+
+    .contact_home {
         font-size: 20px;
     }
-    .search-body{
+
+    .search-body {
         background-image: url('search\ respon.png');
         background-size: cover;
         background-attachment: fixed;
         overflow: hidden;
     }
-    .search_home, .search_menu{
+
+    .search_home,
+    .search_menu {
         font-size: 15px;
         justify-content: space-between;
     }
-    .navBar2{
+
+    .navBar2 {
         margin-top: 20%;
     }
-    .search_home{
+
+    .search_home {
         margin-top: 100px;
     }
-    .search-bar{
+
+    .search-bar {
         margin-top: 40%;
         margin-left: 30%;
         font-size: 14px;
@@ -658,35 +710,41 @@ h1 {
         justify-content: center;
         align-items: center;
     }
-    .icon{
+
+    .icon {
         width: 15px;
         height: 18px;
-        margin-left:-25px;
+        margin-left: -25px;
         margin-top: 45%;
     }
-    .pic{
+
+    .pic {
         height: 100px;
         width: 100px;
         margin-left: 30%;
     }
-    .eye{
+
+    .eye {
         display: none;
 
     }
-    .rtarrow{
+
+    .rtarrow {
         position: fixed;
         margin: 0;
         width: 20px;
         margin-left: 80%;
         margin-top: -30%;
     }
-    .have-searched{
+
+    .have-searched {
         margin-top: 23px;
         font-size: 25px;
         display: block;
         justify-content: center;
     }
-    #ing-btn{
+
+    #ing-btn {
         margin: 0;
         margin-top: 7%;
         width: 150px;
@@ -694,19 +752,20 @@ h1 {
         font-size: 11px;
         margin-left: 25%;
     }
-    .modal{
+
+    .modal {
         width: 70vw;
         height: 70vh;
     }
-    #popupImage{
+
+    #popupImage {
         width: 40vw;
         height: 30vh;
         margin-left: 17%;
     }
-    .popup-text{
+
+    .popup-text {
         font-size: 17px;
     }
 
-
 }
-
