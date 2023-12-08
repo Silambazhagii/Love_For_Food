@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Silambazhagii</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-body">
+    <DIV class="navBar4">
+        <a href="index.html" class="contact_home">HOME</a>
+    </DIV>
+    <header>
+        <h1 class="cont">Contact Me</h1>
+        <p class="pa">Feel free to get in touch with me!</p>
+    </header>
+
+    <section class="contact-form">
+        <h2>Send a Message</h2>
+        <form action="process_contact.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="buto">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p class="pa">@Silambazhagii</p>
+    </footer>
+</body>
+</html>
