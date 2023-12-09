@@ -85,10 +85,11 @@ function displayPopup(meal, updateImage) {
   popupImage.src = meal.strMealThumb;
 
   const ingredientsArray = [];
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 0; i <= 20; i++) {
     const ingredient = meal[`strIngredient${i}`];
     const measure = meal[`strMeasure${i}`];
-    if (ingredient!== "") {
+    
+    if (ingredient !== null && ingredient !== "") {
       ingredientsArray.push(`${ingredient}: ${measure}`);
     }
   }
@@ -101,6 +102,8 @@ function displayPopup(meal, updateImage) {
   }
   openModal();
 }
+
+
 
 function updateImageAndName() {
   if (foodResults.length > 0) {
